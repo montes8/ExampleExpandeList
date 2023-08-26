@@ -26,9 +26,10 @@ public class PresenterMain {
             case 3: {
                 listHistory.add(new ExpandeHistory("12/09/2300 ", "hola como estan"));
                 listHistory.add(new ExpandeHistory("13/09/2300", "hols que hay de nuevo"));
-                list.add(new ParentMedic("clinica 5", "buenos aires 5", new ArrayList<>()));
+                list.add(new ParentMedic("clinica 5", "buenos aires 5 not tiene historial", new ArrayList<>()));
                 list.add(new ParentMedic("clinica 6", "buenos aires 6", listHistoryTwo));
             }
+            break;
             case 2: {
                 listHistory.add(new ExpandeHistory("12/09/2300 ", "hola como estan"));
                 listHistory.add(new ExpandeHistory("13/09/2300", "hols que hay de nuevo"));

@@ -7,16 +7,85 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RadioGroup
+        android:id="@+id/rgSelected"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            android:layout_width="wrap_content"
+            android:text="1"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@color/text_color_selected"
+            android:textSize="20sp"
+            android:background="@drawable/bg_rb"
+            android:button="@null"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbTwo"
+            android:layout_width="wrap_content"
+            android:text="2"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_selected"
+            android:textSize="20sp"
+            android:background="@drawable/bg_rb"
+            android:button="@null"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbThree"
+            android:layout_width="wrap_content"
+            android:text="3"
+            android:gravity="center"
+            android:textColor="@color/text_color_selected"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_rb"
+            android:button="@null"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbFour"
+            android:layout_width="wrap_content"
+            android:text="4"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/text_color_selected"
+            android:textSize="20sp"
+            android:background="@drawable/bg_rb"
+            android:button="@null"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbSix"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_selected"
+            android:textSize="20sp"
+            android:background="@drawable/bg_rb"
+            android:button="@null"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvClinic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:itemCount="2"
         tools:listitem="@layout/row_clinic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/rgSelected" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
